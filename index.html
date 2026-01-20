@@ -18,43 +18,66 @@ body{
     color:#fff;
 }
 
-/* HERO IMAGE */
-.hero{
-    width:100%;
-    min-height:70vh;
-    background:url('photo.jpg') no-repeat center top / cover;
+/* ===== WHATSAPP STYLE TOP ===== */
+.top-wrap{
+    background:#ffffff;
+    color:#000;
+    text-align:center;
+    padding:22px 16px 26px;
+}
+
+.wa-logo{
     display:flex;
-    align-items:flex-end;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
 }
 
-/* OVERLAY TEXT */
-.overlay{
-    width:100%;
-    padding:24px;
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0.5),
-        transparent
-    );
+.wa-logo img{
+    height:26px;
 }
 
-.overlay h1{
-    font-size:28px;
-    font-weight:700;
+.download-btn{
+    background:#22c55e;
+    color:#fff;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
 }
 
-.overlay p{
-    font-size:15px;
-    margin-top:6px;
-    opacity:0.9;
+.profile-img{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:10px auto 18px;
 }
 
-/* CONTENT */
-.content{
+.continue-btn{
+    display:inline-block;
+    background:#128c7e;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:25px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.subtext{
+    font-size:14px;
+    color:#444;
+    margin-top:12px;
+}
+
+/* ===== DARK SECTION ===== */
+.dark-section{
+    background:#0b1220;
     padding:18px;
 }
 
+/* CONTENT BOX */
 .box{
     background:#111a2e;
     border-radius:16px;
@@ -72,17 +95,17 @@ body{
 }
 
 .box ul li{
-    font-size:15px;
     padding:7px 0;
+    font-size:15px;
 }
 
-/* BUTTON */
+/* JOIN BUTTON */
 .btn{
     display:block;
     width:100%;
-    text-align:center;
     background:#22c55e;
     color:#000;
+    text-align:center;
     padding:15px;
     font-size:18px;
     font-weight:700;
@@ -102,16 +125,29 @@ body{
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <div class="overlay">
-        <h1>Mahadev Official</h1>
-        <p>India’s Trusted Platform</p>
+<!-- TOP WHATSAPP STYLE -->
+<div class="top-wrap">
+
+    <div class="wa-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+        <div class="download-btn">Download</div>
     </div>
+
+    <img src="photo.jpg" class="profile-img" alt="Profile">
+
+    <a href="https://wa.me/919999999999" class="continue-btn">
+        Continue to Chat
+    </a>
+
+    <div class="subtext">
+        Hello, I want full information.<br>
+        Don’t have ChatApp yet? <span style="color:#128c7e;">Download</span>
+    </div>
+
 </div>
 
-<!-- CONTENT -->
-<div class="content">
+<!-- OLD CONTENT (SAME AS BEFORE) -->
+<div class="dark-section">
 
     <div class="box">
         <h2>Why Join Us?</h2>
