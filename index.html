@@ -18,13 +18,13 @@ body{
     color:#fff;
 }
 
-/* Top bar */
+/* ===== Top Bar ===== */
 .top-bar{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:14px 16px;
-    background:#ffffff;
+    background:#fff;
 }
 
 .top-bar img{
@@ -36,62 +36,60 @@ body{
     color:#fff;
     padding:8px 18px;
     border-radius:20px;
-    font-size:14px;
     text-decoration:none;
-    font-weight:600;
+    font-size:14px;
 }
 
-/* Hero section */
+/* ===== Hero Section ===== */
 .hero{
-    background:#ffffff;
+    background:#fff;
     text-align:center;
-    padding:30px 16px;
+    padding:28px 16px;
 }
 
 .logo{
     width:160px;
-    margin:0 auto 18px;
+    height:auto;
+    display:block;
+    margin:0 auto 22px;
 }
 
 .hero-btn{
-    display:inline-block;
     background:#0d9488;
     color:#fff;
-    padding:14px 30px;
+    padding:14px 34px;
     border-radius:30px;
     text-decoration:none;
+    display:inline-block;
     font-size:16px;
-    font-weight:600;
-    margin-bottom:14px;
+    margin-bottom:12px;
 }
 
 .hero p{
     color:#444;
     font-size:14px;
+    line-height:1.4;
 }
 
-.hero p span{
+.hero span{
     color:#0d9488;
-    font-weight:600;
 }
 
-/* Card sections */
+/* ===== Sections ===== */
 .section{
-    padding:20px 14px;
+    padding:18px;
 }
 
 .card{
     background:linear-gradient(180deg,#0f1b33,#0b1220);
-    border-radius:16px;
-    padding:22px 18px;
+    border-radius:18px;
+    padding:22px;
     margin-bottom:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* Why join */
 .card h2{
-    font-size:22px;
     margin-bottom:14px;
+    font-size:20px;
 }
 
 .features{
@@ -106,30 +104,22 @@ body{
 .features li::before{
     content:"✔ ";
     color:#22c55e;
-    font-weight:bold;
 }
 
-/* Join now */
-.join-text{
-    font-size:15px;
-    color:#cbd5f5;
-    margin-bottom:16px;
-}
-
+/* ===== WhatsApp Button ===== */
 .whatsapp-btn{
-    display:block;
-    width:100%;
-    text-align:center;
     background:#22c55e;
     color:#000;
+    display:block;
+    text-align:center;
     padding:16px;
     border-radius:30px;
     text-decoration:none;
-    font-size:17px;
-    font-weight:700;
+    font-weight:bold;
+    font-size:16px;
 }
 
-/* Responsive */
+/* ===== Desktop limit ===== */
 @media(min-width:600px){
     body{
         max-width:420px;
@@ -141,16 +131,16 @@ body{
 
 <body>
 
-<!-- Top bar -->
+<!-- Top -->
 <div class="top-bar">
-    <img src="whatsapp.png" alt="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
     <a href="#" class="download-btn">Download</a>
 </div>
 
 <!-- Hero -->
 <div class="hero">
-    <!-- LOGO IMAGE -->
-    <img src="mahadev.png" alt="Mahadev Book" class="logo">
+    <!-- 🔥 IMAGE HERE (photo.jpg) -->
+    <img src="./photo.jpg" alt="Mahadev Book" class="logo">
 
     <a href="https://wa.me/233200656166" class="hero-btn">
         Continue to Chat
@@ -165,7 +155,6 @@ body{
 <!-- Content -->
 <div class="section">
 
-    <!-- Why Join -->
     <div class="card">
         <h2>Why Join Us?</h2>
         <ul class="features">
@@ -176,13 +165,10 @@ body{
         </ul>
     </div>
 
-    <!-- Join Now -->
     <div class="card">
         <h2>Join Now</h2>
-        <p class="join-text">
-            Click below and connect instantly on WhatsApp.
-        </p>
-
+        <p>Click below and connect instantly on WhatsApp.</p>
+        <br>
         <a href="https://wa.me/233200656166" class="whatsapp-btn">
             Join on WhatsApp
         </a>
